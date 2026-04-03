@@ -3,5 +3,9 @@
   "name": "Argus",
   "role": "diagnostics",
   "avatar": "avatar.png",
-  "buttons": []
+  "buttons": [
+    { "label": "Health Check", "action": "health", "description": "Run ecosystem health check" },
+    { "label": "Gate Check", "action": "gate", "description": "Evaluate a pending publish" },
+    { "label": "Report", "action": "report", "description": "View latest diagnostic report" }
+  ]
 }
