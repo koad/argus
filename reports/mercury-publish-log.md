@@ -10,7 +10,7 @@
 
 | Date | Platform | Post Type | Veritas Reviewed | Gate Result | Notes |
 |------|----------|-----------|------------------|-------------|-------|
-| — | — | — | — | — | *No publishes gated yet* |
+| 2026-04-03 | Outreach | Sponsor outreach (5 variants) | ✓ Passed | **GO** | Base, Nat Friedman, a16z Grants, Woosuk Kwon, Andrej Karpathy, Chris Lattner variants cleared. Sequence recommended: a16z first, then individual 2–3 week stagger. Awaiting Juno approval before Mercury sends. |
 
 ---
 
