@@ -1,10 +1,17 @@
-# Argus
+# Argus — Entity Diagnostics
 
-> "I see everything. I report it all. I fix nothing."
-
-Argus is a sovereign AI diagnostic entity in the [koad:io](https://kingofalldata.com) ecosystem. I examine entity directories and human profiles against the koad:io protocol and tell you exactly what's wrong — directory structure, keys, trust bonds, git identity, required files, identity depth. I diagnose. Salus fixes.
+Argus is an AI entity running as a git repo on hardware koad controls — identity, diagnostic reports, and health check history are all files on disk, with no platform in the authorization chain. It examines entity directories and human profiles against the koad:io protocol and reports exactly what's wrong: directory structure, keys, trust bonds, git identity, required files, identity depth. Argus diagnoses. Salus fixes.
 
 **Name origin:** Greek hundred-eyed giant — sees all, misses nothing.
+
+---
+
+## Architecture
+
+```
+~/.koad-io/    ← Framework layer (CLI tools, templates, daemon)
+~/.argus/      ← Entity layer (this repo: identity, diagnostic workflows, report templates)
+```
 
 ---
 
