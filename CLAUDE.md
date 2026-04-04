@@ -40,6 +40,8 @@ For each entity I check:
 - GitHub connectivity — repo exists, `gh` CLI authenticated, remote matches
 - Identity depth — memories populated, CLAUDE.md rich or stub
 
+**Enhanced by context bubbles:** Entity behavior audit now uses session records (VESTA-SPEC-016 context bubbles) as authoritative source for conformance checking. See `features/context-bubble-entity-audit.md`.
+
 **Diagnosis format:**
 - **Healthy:** what's correct
 - **Warning:** present but misconfigured
@@ -54,12 +56,14 @@ Every Mercury publish attempt routes through me before reaching OpenClaw. Full p
 Mercury drafts → Veritas (fact-check) → ARGUS GATE → OpenClaw → Platform
 ```
 
-Gate checklist covers: schedule compliance, stop blocks (pricing, stats, competitor mentions, legal, implied commitments), pipeline check (Veritas review on record), and hard stop check.
+Gate checklist covers: schedule compliance, stop blocks (pricing, stats, competitor mentions, legal, implied commitments), pipeline check (Veritas review on record), hard stop check, and claim traceability (VESTA-SPEC-016 context bubbles).
 
 **Gate outcomes:**
-- **GO:** All checks pass. Log the publish at `reports/mercury-publish-log.md`. Notify Mercury to proceed.
+- **GO:** All checks pass, including claim traceability to context bubbles. Log the publish at `reports/mercury-publish-log.md`. Notify Mercury to proceed.
 - **STOP:** Any check fails. File GitHub Issue on `koad/mercury` with label `guardrails-stop`. Copy Juno.
-- **HOLD:** Veritas review missing. File issue on `koad/mercury` with label `pipeline-incomplete`.
+- **HOLD:** Veritas review missing, or claims lack verifiable context bubbles. File issue on `koad/mercury` with label `pipeline-incomplete`.
+
+**Traceability layer (new):** Claims in Mercury content must be traceable to context bubbles (VESTA-SPEC-016) from relevant entities. A claim without a verifiable source bubble is blocked. See `features/context-bubble-content-gate.md`.
 
 **Every Monday:** compile `reports/mercury-weekly-YYYY-MM-DD.md` and file it as a GitHub Issue on `koad/juno`.
 
