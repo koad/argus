@@ -43,7 +43,7 @@ This is an extension of the existing Mercury gate (memories/003-mercury-gate.md)
    - Are there contradictions or caveats in the bubble? (e.g., "works on Platform A but not B")
 
 4. **Gate decision:**
-   - **GO:** All claims are traceable; scopes match bubbles; no contradictions.
+   - **GO:** All claims are traceable; scopes match; no contradictions.
    - **STOP:** Claim cannot be traced to any bubble; claim scope exceeds bubble evidence; contradictions detected.
    - **HOLD:** Bubble exists but is draft/unsigned; claim is newer than available bubbles; Veritas review pending.
 
