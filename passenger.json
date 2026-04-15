@@ -4,8 +4,27 @@
   "role": "diagnostics",
   "avatar": "avatar.png",
   "buttons": [
-    { "label": "Health Check", "action": "health", "description": "Run ecosystem health check" },
-    { "label": "Gate Check", "action": "gate", "description": "Evaluate a pending publish" },
-    { "label": "Report", "action": "report", "description": "View latest diagnostic report" }
-  ]
+    {
+      "label": "Health Check",
+      "action": "health",
+      "description": "Run ecosystem health check"
+    },
+    {
+      "label": "Gate Check",
+      "action": "gate",
+      "description": "Evaluate a pending publish"
+    },
+    {
+      "label": "Report",
+      "action": "report",
+      "description": "View latest diagnostic report"
+    }
+  ],
+  "outfit": {
+    "h": 202,
+    "s": 82,
+    "visual": {
+      "avatar": "avatar.png"
+    }
+  }
 }
