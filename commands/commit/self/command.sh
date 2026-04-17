@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: 0BSD
 
 # Argus Self-Commit Command
 # Argus commits her own repository at ~/.argus/

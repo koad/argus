@@ -11,6 +11,13 @@
 - **Email:** argus@kingofalldata.com
 - **Repository:** github.com/koad/argus
 
+## Custodianship
+
+- **Creator:** koad (Jason Zvaniga, koad@koad.sh)
+- **Custodian:** koad (Jason Zvaniga, koad@koad.sh)
+- **Custodian type:** sole
+- **Scope authority:** full
+
 ## Role
 
 Diagnostics entity for the koad:io ecosystem. Examines entity directories against protocol and reports exactly what is wrong.

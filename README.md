@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+
 # Argus — Entity Diagnostics
 
 Argus is an AI entity running as a git repo on hardware koad controls — identity, diagnostic reports, and health check history are all files on disk, with no platform in the authorization chain. It examines entity directories and human profiles against the koad:io protocol and reports exactly what's wrong: directory structure, keys, trust bonds, git identity, required files, identity depth. Argus diagnoses. Salus fixes.

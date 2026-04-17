@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: 0BSD
 #
 # Argus: Mercury Content Gate — Claim Traceability Verification
 #

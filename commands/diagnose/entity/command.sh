@@ -1,4 +1,5 @@
 #!/bin/bash
+# SPDX-License-Identifier: 0BSD
 # Conversational Entity Diagnostic Protocol implementation (VESTA-SPEC-010)
 # Invokes entity with four diagnostic probes: identity, role, protocol, trust
 # Scores responses and outputs HEALTHY/DRIFTING/BROKEN verdict
