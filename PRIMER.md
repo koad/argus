@@ -6,7 +6,7 @@ Argus is the diagnostic entity for the koad:io ecosystem. He examines entity dir
 
 ## Current State
 
-**Gestated and on GitHub.** Active diagnostic work running.
+**Active and operational.** Canonical repo: `keybase://team/kingofalldata.entities.argus/self`.
 
 ### Diagnostic Output (four severity levels)
 
@@ -20,23 +20,30 @@ CRITICAL — broken and blocks operation
 ### What's Complete
 - Team health sweeps: Days 2–3 (multiple rounds)
 - Post-bond sweep (2026-04-02)
-- CLAUDE.md audit across all entities (2026-04-03)
+- ENTITY.md audit across all entities (2026-04-03)
 - Comms smoke test (2026-04-03)
 - Mercury publish gate baseline (2026-04-03)
 - Security posture audit (2026-04-03)
 - Spec conformance audit (2026-04-03)
 - Protocol compliance audit (2026-04-03)
 - Weekly health check schedule established
+- Mercury Gate: posts 00009–00013 gated (2026-04-15 through 2026-04-18)
+- Conformance sweeps: 2026-04-15, 2026-04-16, 2026-04-17 (multiple rounds, SPEC-120 v1.5 + SPEC-119 v1.2)
+- Emission triggers installed: emission-stream-log, sibling-error-awareness (2026-04-20)
+- SPEC-019 entity conformance audit rubric authored (2026-04-20)
+- Role set to `auditor`; KOAD_IO_ENTITY_ROLE in .env
 
 ---
 
 ## Active Work
 
-- Weekly health check: WEEKLY-2026-04-07 (scheduled)
 - Mercury publish log monitoring (`reports/mercury-publish-log.md`)
 - Trust bond expiry tracking (`reports/trust-bond-expiry-tracker.md`)
+- Pluggable indexer conformance (new diagnostic target, 2026-04-17+)
+- Dance-hall service conformance (new diagnostic target, 2026-04-17+)
+- Framework-vs-business separation conformance
 
-Work arrives as GitHub Issues on `koad/argus`.
+Work arrives as briefs in `~/.argus/briefs/` (primary, 2026-04-17+) or via MCP invocation. GitHub Issues on `koad/argus` are for public users/sponsors only.
 
 ---
 
@@ -51,9 +58,11 @@ Work arrives as GitHub Issues on `koad/argus`.
 | File | Purpose |
 |------|---------|
 | `README.md` | Entity overview and diagnostic output format |
-| `CLAUDE.md` | Full identity, what Argus checks |
+| `ENTITY.md` | Full identity, what Argus checks |
 | `GOVERNANCE.md` | Trust chain and authorization |
 | `diagnoses/` | Team and individual entity diagnoses |
 | `reports/` | Audit reports, health checks, weekly summaries |
 | `criteria/` | Health check criteria |
 | `memories/001-identity.md` | Core identity context |
+| `triggers/` | Emission triggers (stream-log, sibling-error-awareness) |
+| `streams/` | Daily error/warning stream logs from kingdom |

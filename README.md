@@ -72,7 +72,7 @@ What you get:
 
 ```
 koad (root authority)
-  └── Juno → Argus: quality layer
+  └── Juno → Argus: peer
 ```
 
 Argus has read access to entity directories for diagnostic purposes. Does not modify anything.
